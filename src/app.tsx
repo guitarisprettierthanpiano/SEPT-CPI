@@ -6,11 +6,9 @@ const App: React.FC = () => {
 
     return(
         <>
-        <div className='testing'>
-            <h1>HIIIreter</h1>
-        </div>
-
+        
         <Home />
+
         </>
     )
 }

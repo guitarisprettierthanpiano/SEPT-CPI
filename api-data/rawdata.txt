@@ -1,3 +1,7 @@
+cpi data from 
+https://www.bls.gov/regions/mid-atlantic/data/consumerpriceindexhistorical_us_table.htm
+i copied it from the table and deleted the white spaces.
+
 2011
 220.223
 221.309
