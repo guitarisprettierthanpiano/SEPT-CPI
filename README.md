@@ -1,4 +1,4 @@
-# myproj19FLIGHTTRACKER
+# SEPT-CPI
 
 This is a very simple webpage graphing out each September's CPI over the last ten years.
 
