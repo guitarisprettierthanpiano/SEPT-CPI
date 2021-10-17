@@ -171,8 +171,7 @@ const Home: React.FC = () => {
         <>
 
         <div id='line-chart'>
-            <Line 
-            id='line'
+            <Line
             data={data} 
             options={options.options}
             />
