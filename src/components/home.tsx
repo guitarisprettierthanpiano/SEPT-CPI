@@ -9,7 +9,7 @@ const Home: React.FC = () => {
 
     const fetchCPI = () => {
         fetch('././api-data/cpi.json')
-            .then(res => res.json())
+        .then(res => res.json())
         .then(result => {
             //first copy the entire array into a stored variable
             //setCpiArray(result[0].CPI)
@@ -17,8 +17,8 @@ const Home: React.FC = () => {
             //then making a sub array of every 12 months
             let tempArray = []
 
-            //i chose these numbers for j because there are 129 entries and 12 months per year
-            for (let j = 128; j > 7; j -= 12){
+            //i chose these numbers for j because there are 130 entries and 12 months per year
+            for (let j = 129; j > 8; j -= 12){
                 let cpiNum = parseFloat(result[0].CPI[j].toFixed(2));
                 tempArray.push(cpiNum)
             }
@@ -52,7 +52,7 @@ const Home: React.FC = () => {
     const data = {
         //labels: ['1', '2', '3', '4', '5', '6'],
         type: 'line',
-        labels: ['Sep 11', 'Sep 12', 'Sep 13', 'Sep 14', 'Sep 15', 'Sep 16', 'Sep 17', 'Sep 18', 'Sep 19', 'Sep 20', 'Sep 21'],
+        labels: ['Oct 11', 'Oct 12', 'Oct 13', 'Oct 14', 'Oct 15', 'Oct 16', 'Oct 17', 'Oct 18', 'Oct 19', 'Oct 20', 'Oct 21'],
         animations: {
             y: {
               duration: 2000,
@@ -61,7 +61,7 @@ const Home: React.FC = () => {
         },
         datasets: [
             {
-                label: 'CPI In September',
+                label: 'CPI In October',
                 yAxisID: 'A',
                 data: cpiSubArray,
                 fill: 'start',
@@ -70,7 +70,7 @@ const Home: React.FC = () => {
                 tension: 0.4
             },
             {
-                label: 'CPI Percent Change From Prev Sep',
+                label: 'CPI Percent Change From Prev Oct',
                 yAxisID: 'B',
                 data: cpiPercentArray,
                 fill: 'start',
@@ -118,7 +118,7 @@ const Home: React.FC = () => {
                     weight: 600
                   },
                   color:'rgba(0, 0, 0, 0.8)',
-                  text: 'Yearly September Consumer Price Index',
+                  text: 'Yearly October Consumer Price Index',
                 },
             },
 

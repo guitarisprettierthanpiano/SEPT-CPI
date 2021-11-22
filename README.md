@@ -7,3 +7,5 @@ Then I fetched it before making every 12th element into a useable array for the 
 Then I calculated the differences between sequential months into another array.
 
 The rest was just setting up the chart and adding a small description of what CPI is. Enjoy!
+
+UPDATE: updated everything for October instead of Sept! The data shows 6.22% inflation rather than 5.39% now.
